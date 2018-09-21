@@ -164,7 +164,20 @@ public class PenjualanDetailController extends BaseController {
             alert.setContentText("Apakah Anda yakin untuk melunasi invoice ini. \n Untuk konfirmasi klik OK");
             Optional<ButtonType> result = alert.showAndWait();
             if (result.isPresent() && result.get() == ButtonType.OK) {
-                
+                penjualan.id = selectPenjualan.getId();
+                penjualan.totaldp = selectPenjualan.getTotaldp();
+                penjualan.sisadp = selectPenjualan.getSisadp();
+                if (penjualanGateway.LunasiDP(penjualan)) {
+                    Alert alert1= new Alert(Alert.AlertType.CONFIRMATION);
+                    alert1.setTitle("Informasi");
+                    alert1.setHeaderText(null);
+                    alert1.setContentText("Invoice penjualan berhasil dengan kode "+penjualan.id+" berhasil dilunasi!!\napakah mau cetak struk");
+                    Optional<ButtonType> result1 = alert1.showAndWait();
+                    if (result1.isPresent() && result1.get() == ButtonType.OK) {
+                    PrintReport("report_faktur_penjualan", "id_penjualan", penjualan.id);      
+                    }
+                    showData();
+                }
             }
         } 
     }

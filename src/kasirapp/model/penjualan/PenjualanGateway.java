@@ -429,15 +429,21 @@ public class PenjualanGateway {
         }
     }
     
-    public void LunasiDP(pembayaranDP dp) {
+    public boolean LunasiDP(Penjualan dp) {
         connectDB();
         try {
-            pst = con.prepareCall("UPDATE tb_dp WHERE dp_id = ?");
-            
-            
+            pst = con.prepareStatement("UPDATE tb_dp SET total_dp = ?, sisa_dp = 0, status = 'Lunas' WHERE penjualan_id = ?;");
+            int jumlah = Integer.parseInt(dp.sisadp) + Integer.parseInt(dp.totaldp);
+            pst.setInt(1, jumlah);
+            pst.setString(2, dp.id);
+            pst.executeUpdate();
+            pst.close();
+            con.close();
+            return true;
         } catch (SQLException ex) {
             Logger.getLogger(PenjualanGateway.class.getName()).log(Level.SEVERE, null, ex);
         }
+        return false;
     }
 
 }
