@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasirapp.controller.penjualan.PenjualanItemController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="465.0" prefWidth="585.0" stylesheets="@../../css/PopUp.css">
+         <children>
+            <BorderPane prefHeight="500.0" prefWidth="700.0" stylesheets="@../../css/Mainstyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <Pane prefHeight="368.0" prefWidth="581.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TabPane prefHeight="356.0" prefWidth="581.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Daftar Barang">
+                                 <content>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="tblItem" onKeyPressed="#AddItem" onMouseClicked="#actClikItem" prefHeight="323.0" prefWidth="581.0" tableMenuButtonVisible="true">
+                                            <columns>
+                                              <TableColumn fx:id="clmKodeBarang" prefWidth="107.0" text="KODE BARANG" />
+                                              <TableColumn fx:id="clmNamaBarang" prefWidth="303.0" text="NAMA BARANG" />
+                                                <TableColumn fx:id="clmStok" minWidth="0.0" prefWidth="91.0" text="STOK" />
+                                                <TableColumn fx:id="clmSatuan" prefWidth="75.0" text="SATUAN" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                 </content>
+                            </Tab>
+                            <Tab text="Daftar Jasa">
+                                 <content>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="tblJasa" onKeyPressed="#actKeyJasa" onMouseClicked="#actClickJasa" prefHeight="324.0" prefWidth="581.0" tableMenuButtonVisible="true">
+                                            <columns>
+                                              <TableColumn fx:id="clmKodeJasa" prefWidth="132.0" text="KODE JASA" />
+                                              <TableColumn fx:id="clmNamaJasa" prefWidth="447.0" text="NAMA JASA" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                 </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </Pane>
+               </center>
+               <top>
+                  <HBox alignment="CENTER" prefHeight="72.0" prefWidth="510.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="tfSearch" onKeyReleased="#tfSearchOnAction" prefHeight="33.0" prefWidth="343.0" promptText="Search" />
+                        <Button fx:id="btnRefresh" mnemonicParsing="false" onAction="#btnRefreshOnAction" prefHeight="31.0" prefWidth="30.0">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assets/refresh.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip text="refresh" />
+                           </tooltip>
+                        </Button>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnClose" layoutX="577.0" mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="30.0" prefWidth="27.0" stylesheets="@../../css/btnOnText.css" />
+   </children>
+</Group>

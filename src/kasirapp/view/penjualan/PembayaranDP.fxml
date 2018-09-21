@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasirapp.controller.penjualan.PembayaranDPController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="274.0" prefWidth="247.0">
+         <children>
+            <Label layoutX="50.0" layoutY="14.0" text="Pembayaran DP">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <VBox layoutX="19.0" layoutY="53.0" prefHeight="171.0" prefWidth="206.0" spacing="3.0">
+               <children>
+                  <Label text="Tanggal :" />
+                  <DatePicker fx:id="tanggalDP" prefHeight="31.0" prefWidth="208.0" />
+                  <Label text="Jumlah DP :" />
+                  <TextField fx:id="jumlahDP" onKeyReleased="#actSisaDP" prefHeight="31.0" prefWidth="225.0" />
+                  <Label text="Sisa DP yang harus dibayar :" />
+                  <TextField fx:id="sisaDP" prefHeight="31.0" prefWidth="225.0" />
+                  <Label fx:id="idpenjualan" text="Label" visible="false" />
+                  <Label fx:id="total" text="Label" visible="false" />
+               </children>
+            </VBox>
+            <Button fx:id="btnCancel" layoutX="165.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnCancel" prefHeight="31.0" prefWidth="59.0" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSaveDP" layoutX="94.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnSaveDpOnAction" prefHeight="31.0" prefWidth="59.0" text="Save">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+         </children>
+         <stylesheets>
+            <URL value="@../../css/PopUp.css" />
+            <URL value="@../../css/Mainstyle.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</Group>

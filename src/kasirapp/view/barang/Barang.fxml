@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="acContent" prefHeight="607.0" prefWidth="880.0" stylesheets="@../../css/Mainstyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasirapp.controller.barang.BarangController">
+   <children>
+      <BorderPane layoutX="24.0" prefHeight="563.0" prefWidth="752.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="55.0" prefWidth="752.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="78.0" layoutY="-22.0" prefHeight="78.0" prefWidth="752.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="Filter :" />
+                        <ComboBox fx:id="cbFilter" onAction="#FilterChanged" prefHeight="22.0" prefWidth="140.0" promptText="Barang Jadi" />
+                        <TextField fx:id="tfSearch" onKeyReleased="#tfSearchOnAction" prefHeight="31.0" prefWidth="570.0" promptText="Search" />
+                        <Button fx:id="btnRefresh" mnemonicParsing="false" onAction="#btnRefreshOnAction" prefHeight="31.0" prefWidth="30.0">
+                           <tooltip>
+                              <Tooltip text="refresh" />
+                           </tooltip>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assets/refresh.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="75.0" prefWidth="820.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" layoutX="157.0" prefHeight="100.0" prefWidth="820.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="33.0" prefWidth="117.0" text="Add New">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="33.0" prefWidth="120.0" text="Update">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="33.0" prefWidth="117.0" text="Delete">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <TableView fx:id="tblBarang" editable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="clmKodeBarang" prefWidth="124.0" text="KODE BARANG" />
+                <TableColumn fx:id="clmNamaBarang" prefWidth="257.0" text="NAMA BARANG" />
+                  <TableColumn fx:id="clmHargaJual" minWidth="0.0" prefWidth="147.0" text="HARGA JUAL" />
+                  <TableColumn fx:id="clmStok" minWidth="0.0" prefWidth="116.0" text="STOK" />
+                  <TableColumn fx:id="clmTanggalInput" prefWidth="175.0" text="TANGGAL INPUT" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+   <padding>
+      <Insets left="30.0" right="30.0" />
+   </padding>
+</AnchorPane>

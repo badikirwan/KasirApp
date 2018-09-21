@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: none;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasirapp.controller.LoginController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="638.0" style="-fx-background-color: #39ace5;">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="345.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="98.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/24.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="username" layoutX="64.0" layoutY="200.0" onAction="#usernameOnAction" prefHeight="33.0" prefWidth="219.0" promptText="username" />
+                  <PasswordField fx:id="password" layoutX="63.0" layoutY="252.0" onAction="#passwordOnAction" prefHeight="33.0" prefWidth="219.0" promptText="password" />
+                  <Button layoutX="63.0" layoutY="299.0" mnemonicParsing="false" onAction="#LoginAction" prefHeight="33.0" prefWidth="219.0" style="-fx-background-color: #3098cc;" text="LOGIN" textFill="WHITE" />
+                  <Label fx:id="pesan" alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="344.0" textAlignment="CENTER" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="419.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="399.0" layoutY="192.0" text="Selamat Datang " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="399.0" layoutY="221.0" text="di Kasir APP" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="399.0" layoutY="262.0" text="Login disini untuk mulai menggunakan" textFill="WHITE" />
+            <Button fx:id="btnCloseLogin" layoutX="607.0" layoutY="3.0" mnemonicParsing="false" onAction="#CloseAction" prefHeight="24.0" prefWidth="26.0" text="X" />
+            <Button fx:id="btnMinLogin" layoutX="577.0" layoutY="3.0" mnemonicParsing="false" onAction="#MinimizeAction" prefHeight="24.0" prefWidth="26.0" text="_" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

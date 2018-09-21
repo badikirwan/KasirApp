@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apMyAccountMother" prefHeight="509.0" prefWidth="687.0" stylesheets="@../../css/Mainstyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasirapp.controller.setting.SistemSettingController">
+   <children>
+      <HBox alignment="CENTER" layoutX="200.0" layoutY="150.0" prefHeight="509.0" prefWidth="666.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="429.0" prefWidth="458.0">
+               <children>
+                  <Label layoutX="126.0" layoutY="34.0" text="Sistem Setting">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="29.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Backup database" />
+                  <Button layoutX="29.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
+                  <Text layoutX="29.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Backup database" />
+                  <Button layoutX="29.0" layoutY="154.0" mnemonicParsing="false" text="Button" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

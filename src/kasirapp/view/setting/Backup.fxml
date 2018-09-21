@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="283.0" prefWidth="356.0" stylesheets="@../../css/PopUp.css">
+         <children>
+            <Label layoutX="115.0" layoutY="14.0" text="Wizard Backup">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="67.0" text="Konfigurasi Database" />
+            <ComboBox layoutX="14.0" layoutY="88.0" prefWidth="150.0" />
+            <Label layoutX="14.0" layoutY="121.0" text="File" />
+            <TextField layoutX="15.0" layoutY="140.0" prefHeight="25.0" prefWidth="242.0" />
+            <Button layoutX="269.0" layoutY="140.0" mnemonicParsing="false" text="Pilih File" />
+            <Button layoutX="292.0" layoutY="234.0" mnemonicParsing="false" text="Batal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="221.0" layoutY="234.0" mnemonicParsing="false" text="Backup">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ProgressBar layoutX="16.0" layoutY="196.0" prefHeight="18.0" prefWidth="325.0" progress="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</Group>

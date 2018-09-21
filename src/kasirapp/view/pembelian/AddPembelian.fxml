@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasirapp.controller.pembelian.AddPembelianController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="465.0" prefWidth="585.0" stylesheets="@../../css/PopUp.css">
+         <children>
+            <BorderPane prefHeight="500.0" prefWidth="700.0" stylesheets="@../../css/Mainstyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <Pane prefHeight="318.0" prefWidth="552.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TableView fx:id="tblAddPembelian" layoutX="12.0" layoutY="-4.0" onKeyPressed="#AddItem" onMouseClicked="#actClikItem" prefHeight="325.0" prefWidth="557.0">
+                          <columns>
+                            <TableColumn fx:id="clmKodeBarang" prefWidth="107.0" text="KODE BARANG" />
+                            <TableColumn fx:id="clmNamaBarang" prefWidth="303.0" text="NAMA BARANG" />
+                              <TableColumn fx:id="clmSatuan" minWidth="0.0" prefWidth="146.0" text="SATUAN" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+               </center>
+               <top>
+                  <HBox alignment="CENTER" prefHeight="72.0" prefWidth="510.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Filter :" />
+                        <ComboBox fx:id="cbKategori" onAction="#cbAction" prefHeight="22.0" prefWidth="88.0" promptText="PILIH" />
+                        <TextField fx:id="tfSearch" onKeyReleased="#tfSearchOnAction" prefHeight="33.0" prefWidth="343.0" promptText="Search" />
+                        <Button fx:id="btnRefresh" mnemonicParsing="false" onAction="#btnRefreshOnAction" prefHeight="31.0" prefWidth="30.0">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assets/refresh.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip text="refresh" />
+                           </tooltip>
+                        </Button>
+                     </children>
+                  </HBox>
+               </top>
+               <bottom>
+                  <Pane prefHeight="71.0" prefWidth="510.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnCancel" layoutX="450.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="33.0" prefWidth="117.0" text="Close">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Group>

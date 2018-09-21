@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="acMain" onKeyPressed="#acMain" onMouseMoved="#acMainOnMouseMove" prefHeight="675.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasirapp.controller.HomeController">
+   <children>
+      <StackPane layoutY="-9.0" prefHeight="593.0" prefWidth="767.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane fx:id="acDashBord" prefHeight="675.0" prefWidth="168.0">
+                     <children>
+                        <ScrollPane fx:id="leftSideBarScroolPan" fitToHeight="true" prefHeight="675.0" prefViewportHeight="675.0" prefViewportWidth="128.0" prefWidth="168.0" style="-fx-padding: 0;" translateX="1.0" translateY="1.0" translateZ="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <AnchorPane prefHeight="767.0" prefWidth="164.0" style="-fx-background-color: #2980b9;" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="btnHome" alignment="CENTER" contentDisplay="TOP" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnHomeOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Home" textFill="#4e4f52">
+                                       <graphic>
+                                          <ImageView fx:id="imgHomeBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/home.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnJasa" contentDisplay="TOP" layoutX="14.0" layoutY="163.0" mnemonicParsing="false" onAction="#btnJasaOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Jasa" textFill="#4e4f52">
+                                       <graphic>
+                                          <ImageView fx:id="imgJasaBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/jasa.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnBarang" contentDisplay="TOP" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnBarangOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Barang" textFill="#4e4f52">
+                                       <graphic>
+                                          <ImageView fx:id="imgBarangBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/barang.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnPembelian" contentDisplay="TOP" layoutX="14.0" layoutY="241.0" mnemonicParsing="false" onAction="#btnPembelianOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Pembelian" textFill="#4e4f52">
+                                       <graphic>
+                                          <ImageView fx:id="imgPembelianBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/stock.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnPenjualan" contentDisplay="TOP" layoutX="14.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnPenjualanOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Penjualan" textFill="#4e4f52">
+                                       <graphic>
+                                          <ImageView fx:id="imgPenjualanBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/beli.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnLaporan" contentDisplay="TOP" layoutX="14.0" layoutY="397.0" mnemonicParsing="false" onAction="#btnLaporanOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Laporan" textFill="#4e4f52">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fx:id="imgLaporanBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/laporan.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnPegawai" contentDisplay="TOP" layoutX="14.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnPegawaiOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Pegawai" textFill="#4e4f52">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fx:id="imgPegawaiBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/pegawai.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnSeting" contentDisplay="TOP" layoutX="14.0" layoutY="553.0" mnemonicParsing="false" onAction="#btnSetingOnClick" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Seting" textFill="#4e4f52">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fx:id="imgSetingBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/seting.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <BorderPane fx:id="appContent" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <AnchorPane fx:id="acHead" prefHeight="54.0" prefWidth="764.0" style="-fx-background-color: #bdc3c7;" BorderPane.alignment="CENTER">
+                           <children>
+                              <GridPane layoutX="14.0" layoutY="-15.0" prefHeight="60.0" prefWidth="751.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                       <children>
+                                          <AnchorPane prefHeight="48.0" prefWidth="160.0">
+                                             <children>
+                                                <MenuButton fx:id="mbtnUsrInfoBox" layoutY="4.0" mnemonicParsing="false" onAction="#mbtnOnClick" prefHeight="36.0" prefWidth="120.0" style="-fx-background-color: #bdc3c7;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+                                                  <items>
+                                                    <MenuItem fx:id="miPopOver" mnemonicParsing="false">
+                                                         <graphic>
+                                                            <AnchorPane prefHeight="225.0" prefWidth="190.0">
+                                                               <children>
+                                                                  <Circle fx:id="circleImgUsr" fill="DODGERBLUE" layoutX="100.0" layoutY="49.0" radius="46.0" stroke="BLACK" strokeType="INSIDE" />
+                                                                  <Label fx:id="lblUsrNamePopOver" alignment="CENTER" layoutY="107.0" prefHeight="15.0" prefWidth="196.0" text="UserName" />
+                                                                  <Label fx:id="lblFullName" alignment="CENTER" layoutX="2.0" layoutY="129.0" prefHeight="15.0" prefWidth="196.0" text="Full Name" />
+                                                                  <Label fx:id="lblRoleAs" alignment="CENTER" layoutX="3.0" layoutY="148.0" prefHeight="15.0" prefWidth="196.0" text="Role" />
+                                                                  <Button fx:id="btnLogOut" layoutX="3.0" layoutY="184.0" mnemonicParsing="false" onAction="#btnLogOut" prefHeight="40.0" prefWidth="196.0" text="logOut" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </graphic>
+                                                      </MenuItem>
+                                                  </items>
+                                                   <graphic>
+                                                      <AnchorPane prefHeight="20.0" prefWidth="120.0">
+                                                         <children>
+                                                            <Circle fx:id="imgUsrTop" fill="DODGERBLUE" layoutX="26.0" layoutY="24.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+                                                            <Label fx:id="lblUsrName" layoutX="52.0" layoutY="17.0" text="Admin" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </graphic>
+                                                   <padding>
+                                                      <Insets left="-15.0" top="-10.0" />
+                                                   </padding>
+                                                </MenuButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="249.0" />
+                                    <AnchorPane prefHeight="53.0" prefWidth="255.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label layoutX="62.0" layoutY="23.0" text="KASIR APP" textFill="#fff7f7">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font></Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <center>
+                        <StackPane fx:id="acContent" prefHeight="714.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane prefHeight="714.0" prefWidth="724.0" />
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

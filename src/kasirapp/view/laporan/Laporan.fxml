@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="747.0" stylesheets="@../../css/Mainstyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasirapp.controller.laporan.LaporanController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <BorderPane prefHeight="400.0" prefWidth="617.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="190.0" spacing="3.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Jasa">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#btnJasaOnAction" prefHeight="33.0" prefWidth="190.0" text="Rekap Data Jasa" />
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Button" visible="false" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="190.0" spacing="3.0">
+                     <children>
+                        <Label text="Barang">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#btnBarangOnAction" prefHeight="33.0" prefWidth="190.0" text="Rekap Data Barang" />
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Rekap Stok Barang" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="190.0" spacing="3.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="Penjualan">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Rekap penjualan per item" />
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Rekap penjualan per faktur" />
+                        <Button fx:id="btnPenjualanHarian" mnemonicParsing="false" onAction="#btnPenjualanHarianOnAction" prefHeight="33.0" prefWidth="190.0" text="Rekap penjualan harian" />
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Rekap penjualan bulanan" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="190.0" spacing="3.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="Pembelian">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Rekap pembelian per item" />
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Rekap pembelian per faktur" />
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Rekap pembelian detail" />
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Button" />
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

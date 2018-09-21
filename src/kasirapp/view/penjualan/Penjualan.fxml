@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasirapp.controller.penjualan.PenjualanController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="acContent" layoutX="9.0" layoutY="9.0" onKeyPressed="#actMain" prefHeight="490.0" prefWidth="763.0">
+         <children>
+            <BorderPane layoutX="30.0" prefHeight="450.0" prefWidth="699.0">
+               <center>
+                  <TabPane prefHeight="200.0" prefWidth="200.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                     <tabs>
+                        <Tab text="Item">
+                           <content>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                 <center>
+                                    <TableView fx:id="tblPenjualan" onMouseClicked="#actItemClick" prefHeight="357.0" prefWidth="699.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                                       <columns>
+                                          <TableColumn fx:id="clmKodeItem" prefWidth="111.0" text="KODE ITEM" />
+                                          <TableColumn fx:id="clmNamaItem" prefWidth="225.0" text="NAMA ITEM" />
+                                          <TableColumn fx:id="clmQty" prefWidth="61.0" text="QTY" />
+                                          <TableColumn fx:id="clmHarga" prefWidth="148.0" text="HARGA" />
+                                          <TableColumn fx:id="clmSubTotal" prefWidth="152.0" text="SUB TOTAL" />
+                                       </columns>
+                                       <BorderPane.margin>
+                                          <Insets top="10.0" />
+                                       </BorderPane.margin>
+                                    </TableView>
+                                 </center>
+                              </BorderPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Uang Muka">
+                           <content>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                 <bottom>
+                                    <HBox prefHeight="41.0" prefWidth="880.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Button fx:id="btnBuatdp" mnemonicParsing="false" onAction="#btnBuatdpOnAction" text="Buat DP" />
+                                          <Button fx:id="btnDeletedp" mnemonicParsing="false" onAction="#btnDeletedpOnAction" text="Hapus DP" />
+                                       </children>
+                                       <BorderPane.margin>
+                                          <Insets top="10.0" />
+                                       </BorderPane.margin>
+                                    </HBox>
+                                 </bottom>
+                                 <center>
+                                    <TableView fx:id="tblDP" prefHeight="176.0" prefWidth="850.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                                       <columns>
+                                          <TableColumn fx:id="clmKodeDP" prefWidth="116.0" text="KODE DP" />
+                                          <TableColumn fx:id="clmTanggalDP" prefWidth="124.0" text="TANGGAL" />
+                                          <TableColumn fx:id="clmTotalDP" prefWidth="124.0" text="TOTAL DP" />
+                                          <TableColumn fx:id="clmSisa" prefWidth="166.0" text="SISA YG HARUS DIBAYAR" />
+                                          <TableColumn fx:id="clmStatus" prefWidth="168.0" text="STATUS" />
+                                       </columns>
+                                       <BorderPane.margin>
+                                          <Insets top="10.0" />
+                                       </BorderPane.margin>
+                                    </TableView>
+                                 </center>
+                              </BorderPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </center>
+               <top>
+                  <BorderPane prefHeight="157.0" prefWidth="699.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Label fx:id="txtTitle" text="Add Penjualan" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </top>
+                     <center>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <VBox prefHeight="173.0" prefWidth="186.0" spacing="3.0">
+                                 <children>
+                                    <Label text="Kode Penjualan :" />
+                                    <TextField fx:id="txtKodePenjualan" editable="false" />
+                                    <Label text="Tanggal :" />
+                                    <DatePicker fx:id="txtTanggal" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="173.0" prefWidth="186.0" spacing="3.0">
+                                 <children>
+                                    <Label text="Nama Customer :" />
+                                    <TextField fx:id="txtNamaCustomer" />
+                                    <Label text="No. Telepon :" />
+                                    <TextField fx:id="txtTelepon" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="120.0" prefWidth="284.0" spacing="3.0">
+                                 <children>
+                                    <Label text="Jenis Pembayaran :" />
+                                    <ComboBox fx:id="cbJenisPembayaran" onMouseClicked="#cbJenisPembayaranOnClick" prefHeight="33.0" prefWidth="186.0" promptText="CASH" visibleRowCount="2" />
+                                    <Label text="Keteranagn :" />
+                                    <TextField fx:id="txtKeterangan" prefHeight="33.0" prefWidth="217.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets top="10.0" />
+                           </BorderPane.margin>
+                        </HBox>
+                     </center>
+                     <BorderPane.margin>
+                        <Insets top="10.0" />
+                     </BorderPane.margin>
+                  </BorderPane>
+               </top>
+            </BorderPane>
+            <HBox layoutX="31.0" layoutY="446.0" prefHeight="62.0" prefWidth="342.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btnAddItem" mnemonicParsing="false" onAction="#btnAddItemOnAction" prefHeight="27.0" prefWidth="87.0" text="Add Item">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDeleteItem" mnemonicParsing="false" onAction="#btnDeleteItemOnAction" prefHeight="27.0" prefWidth="106.0" text="Delete Item">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="27.0" prefWidth="80.0" text="Save">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="27.0" prefWidth="80.0" text="Cancel">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+            <Label layoutX="515.0" layoutY="464.0" text="Total :">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtTotal" layoutX="628.0" layoutY="466.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+         <stylesheets>
+            <URL value="@../../css/Mainstyle.css" />
+            <URL value="@../../css/PopUp.css" />
+         </stylesheets>
+      </AnchorPane>
+      <Button fx:id="btnClose" layoutX="753.0" layoutY="-1.0" mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="30.0" prefWidth="27.0" stylesheets="@../../css/btnOnText.css" />
+   </children>
+</Group>
