@@ -35,6 +35,11 @@ public class LaporanController extends BaseController {
         PrintReport("report_jasa", "", ""); 
     }
     
+    @FXML
+    public void rekapPembelianFakturOnAction(ActionEvent event) throws IOException {
+        modalPopUp("/kasirapp/view/laporan/Dialog.fxml", "Print report pembelian per faktur");
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

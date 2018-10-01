@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.sql.Connection;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.ResourceBundle;
@@ -91,15 +92,15 @@ public class BaseController implements Initializable {
         }
     }
     
-    public void PrintReport2(String file, String key1, Date value1, String key2, Date value2) {
+    public void PrintReport2(String file, LocalDate value1, LocalDate value2) {
         Connection con = KoneksiDB.connector();
         String filepath = "/kasirapp/reports/"+file+".jasper";
         HashMap param = new HashMap();
                 
         try {
             InputStream report = getClass().getResourceAsStream(filepath);
-            param.put(key1, value1);
-            param.put(key1, value2);
+            param.put("tgl_awal", value1);
+            param.put("tgl_akhir", value2);
             param.put("pathlogo", BaseController.class.getResourceAsStream("/kasirapp/assets/logo.jpeg"));
             JasperPrint jprint = JasperFillManager.fillReport(report, param, con);
             JasperViewer viewer = new JasperViewer(jprint, false);

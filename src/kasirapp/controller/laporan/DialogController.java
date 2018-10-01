@@ -9,6 +9,7 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -32,13 +33,15 @@ public class DialogController extends BaseController {
     
     @FXML
     public void btnPrintOnAction(ActionEvent event) throws ParseException {
-        String tglawal = tglAwal.getValue().toString();
-        String tglahir = tglAhir.getValue().toString();
-        SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd");
-        Date cok = df.parse(tglawal);
-        Date cok1 = df.parse(tglahir);
-        
-        PrintReport2("report_penjualan_detail", "tgl1", cok, "tgl2", cok1);
+        LocalDate tglawal = tglAwal.getValue();
+        LocalDate tglahir = tglAhir.getValue();
+        //Date df = new SimpleDateFormat("yyyy/MM/dd").parse(tglawal);
+        //Date df1 = new SimpleDateFormat("yyyy/MM/dd").parse(tglahir);
+        //Date cok = df.parse(tglawal);
+        //Date cok1 = df.parse(tglahir);
+        System.out.print(tglawal);
+        //System.out.print(df1);
+        PrintReport2("report_pembelian_perfaktur", tglawal, tglahir);
     }
     
     @FXML
