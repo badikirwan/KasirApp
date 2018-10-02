@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4663d4bf-4b5d-4ed5-8a5e-73b26e4dc631">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 3" uuid="adcd8fe8-f34f-4e04-8c7c-f077ce5b6d10">
+		<queryString>
+			<![CDATA[SELECT a.*, b.*, c.* FROM tb_pembelian_item a LEFT JOIN tb_items b ON a.item_id = b.item_id LEFT JOIN tb_pembelian c ON a.pembelian_id = c.pembelian_id GROUP BY a.item_id]]>
+		</queryString>
+		<field name="id" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="pembelian_id" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="item_id" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="qty" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="harga" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="diskon_persen" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="subtotal" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="nama" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="keterangan" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="harga_beli" class="java.lang.Double">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="harga_jual" class="java.lang.Double">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="stok" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="satuan" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="tgl_input" class="java.sql.Date">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="kategori_id" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="pegawai_id" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="tanggal_beli" class="java.sql.Date">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="pembayaran_type" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="total" class="java.lang.Double">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="dataset1" uuid="6670bb65-fbe6-4e43-b421-74ad0a805586">
+		<queryString>
+			<![CDATA[SELECT a.*, b.*, c.* FROM tb_pembelian_item a LEFT JOIN tb_items b ON a.item_id = b.item_id LEFT JOIN tb_pembelian c ON a.pembelian_id = c.pembelian_id]]>
+		</queryString>
+		<field name="id" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="pembelian_id" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="item_id" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="qty" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="harga" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="diskon_persen" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="subtotal" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="nama" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="keterangan" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="harga_beli" class="java.lang.Double">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="harga_jual" class="java.lang.Double">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="stok" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="satuan" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="tgl_input" class="java.sql.Date">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="kategori_id" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="pegawai_id" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="tanggal_beli" class="java.sql.Date">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="pembayaran_type" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="total" class="java.lang.Double">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="pathlogo" class="java.io.InputStream"/>
+	<parameter name="tgl_awal" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="tgl_akhir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\BadikIrwan\\Documents\\NetBeansProjects\\KasirApp\\src\\kasirapp\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT a.*, b.*, c.* FROM tb_pembelian_item a LEFT JOIN tb_items b ON a.item_id = b.item_id LEFT JOIN tb_pembelian c ON a.pembelian_id = c.pembelian_id WHERE c.tanggal_beli BETWEEN $P{tgl_awal} AND $P{tgl_akhir}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pembelian_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="item_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="diskon_persen" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="subtotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga_beli" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga_jual" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="satuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_input" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kategori_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pegawai_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_beli" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pembayaran_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="pembelian_id">
+		<groupExpression><![CDATA[$F{pembelian_id}]]></groupExpression>
+	</group>
+	<group name="item_id">
+		<groupExpression><![CDATA[$F{item_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="84" height="79" uuid="e218fe5e-de6b-4df3-91c7-727e171c521b"/>
+			</image>
+			<staticText>
+				<reportElement x="84" y="18" width="192" height="28" uuid="d80edb90-156f-4d08-9a1c-7773b3b05367"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Yudharta Advertising]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="46" width="350" height="20" uuid="e58b17ff-5b15-4448-867f-36531ecc96e3"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Yudharta No. 07 Sengonagung, Purwosari, Telp.: 0343-6755 333]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="5" width="555" height="1" uuid="c31cfaa8-e0bf-434e-b241-18468be6e96d"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="10" width="555" height="24" forecolor="#FF3333" uuid="f3d08981-5ccb-4475-bde2-d36254382e10"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Rekap Pembelian Detail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="41" width="49" height="20" uuid="df8e13a2-6231-4f7a-ab90-6d256e7543b8"/>
+				<text><![CDATA[Periode :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="413" y="41" width="45" height="20" uuid="d157df39-bb2e-4108-b75a-212041c0572c"/>
+				<textFieldExpression><![CDATA[$P{tgl_awal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="458" y="41" width="15" height="20" uuid="4f0ae841-0f09-46fe-9107-7ba9f21ad2b3"/>
+				<text><![CDATA[s/d]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="473" y="41" width="82" height="20" uuid="75abeb42-8aca-44ad-874d-e037226e9f95"/>
+				<textFieldExpression><![CDATA[$P{tgl_akhir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="44" y="10" width="100" height="20" uuid="23fd4ba4-a2fc-4c15-a22a-c01b7a7c7aba"/>
+				<textFieldExpression><![CDATA[$F{tanggal_beli}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="108" splitType="Stretch">
+			<rectangle>
+				<reportElement isPrintRepeatedValues="false" x="0" y="1" width="555" height="20" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" printWhenGroupChanges="pembelian_id" uuid="648407fd-b3e3-45d8-9fc9-9fbf8a7b34a3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement isPrintRepeatedValues="false" x="0" y="21" width="555" height="26" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" printWhenGroupChanges="pembelian_id" uuid="3b4f6817-8b28-4956-8daf-43dd41e0a67c"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="0" y="1" width="100" height="20" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" printWhenGroupChanges="pembelian_id" uuid="31faebf5-9959-47f1-9c5f-0b61c401c6a1"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="100" y="1" width="100" height="20" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" printWhenGroupChanges="pembelian_id" uuid="ac404634-ddd7-408f-9626-578576743c2e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Faktur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="200" y="1" width="100" height="20" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" printWhenGroupChanges="pembelian_id" uuid="c686b869-02da-4042-a878-3444969c0d0e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pegawai]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement isPrintRepeatedValues="false" x="0" y="21" width="100" height="20" isRemoveLineWhenBlank="true" uuid="37fc8dec-95f5-4164-ada3-49e746a66151"/>
+				<textFieldExpression><![CDATA[$F{tanggal_beli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement isPrintRepeatedValues="false" x="100" y="21" width="100" height="20" isRemoveLineWhenBlank="true" uuid="1aac63c7-377e-485a-a24d-f980c1029171"/>
+				<textFieldExpression><![CDATA[$F{pembelian_id}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement isPrintRepeatedValues="false" x="100" y="47" width="455" height="20" printWhenGroupChanges="pembelian_id" uuid="f5c06cf2-6d0b-4711-bbd8-243cde0ee6c4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="100" y="67" width="455" height="20" uuid="08d8430e-403d-4aa5-9bd1-c3587cb91d57"/>
+			</rectangle>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="100" y="47" width="100" height="20" printWhenGroupChanges="pembelian_id" uuid="a18c53f1-b7bc-4058-86e8-231cdcec9f8c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Item]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="200" y="47" width="129" height="20" printWhenGroupChanges="pembelian_id" uuid="37e76342-f026-4d6e-ab61-cc8b7129a08a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Item]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="329" y="47" width="35" height="20" printWhenGroupChanges="pembelian_id" uuid="31ae1176-ef8b-46f4-948c-613e58d7a913"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QTY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="364" y="47" width="94" height="20" printWhenGroupChanges="pembelian_id" uuid="533bb138-fba5-449c-bca6-f6d53ab22257"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="458" y="47" width="97" height="20" printWhenGroupChanges="pembelian_id" uuid="f95df9b6-0386-43f9-9b41-6c90e340684a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="67" width="100" height="20" uuid="8bea64d6-5eb2-4d8f-b9c3-02e1683081f2"/>
+				<textFieldExpression><![CDATA[$F{item_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="67" width="128" height="20" uuid="6cfa7edd-6b98-4367-85f2-d10664ab9b40"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="67" width="35" height="20" uuid="ee4df8d1-1cd2-428a-b43a-548ce6ce17c1"/>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="364" y="67" width="94" height="20" uuid="cd6b96a2-84d7-44da-92b0-350c7796a1ce"/>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="458" y="69" width="100" height="20" uuid="b80fbc05-efee-4b27-8b4d-10577a8eaa11"/>
+				<textFieldExpression><![CDATA[$F{subtotal}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement isPrintRepeatedValues="false" x="100" y="87" width="455" height="20" isRemoveLineWhenBlank="true" printWhenGroupChanges="item_id" uuid="574c5214-94dd-4e2f-b65b-881288fa83f7"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="200" y="87" width="129" height="20" isRemoveLineWhenBlank="true" printWhenGroupChanges="pembelian_id" uuid="2e6af959-3e79-4c8d-9a19-3c117103a619"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sub Total]]></text>
+			</staticText>
+			<textField>
+				<reportElement isPrintRepeatedValues="false" x="455" y="87" width="100" height="20" printWhenGroupChanges="pembelian_id" uuid="aa3e6d72-f92c-47cf-a10b-79456b8c1420"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

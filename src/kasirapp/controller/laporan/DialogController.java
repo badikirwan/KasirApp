@@ -26,6 +26,7 @@ import kasirapp.controller.BaseController;
  */
 public class DialogController extends BaseController {
 
+    String judul;
     @FXML
     DatePicker tglAwal, tglAhir;
     @FXML
@@ -41,7 +42,17 @@ public class DialogController extends BaseController {
         //Date cok1 = df.parse(tglahir);
         System.out.print(tglawal);
         //System.out.print(df1);
-        PrintReport2("report_pembelian_perfaktur", tglawal, tglahir);
+        switch(judul) {
+            case "Rekap Penjualan Harian":
+                PrintReport2("report_penjualan_detail", tglawal, tglahir);
+                break;
+            case "Rekap pembelian per faktur":
+                PrintReport2("report_pembelian_perfaktur", tglawal, tglahir);
+                break;
+            case "Rekap pembelian per item":
+                PrintReport2("report_pembelian_peritem", tglawal, tglahir);
+                break;
+        }    
     }
     
     @FXML
