@@ -44,8 +44,11 @@ public class DialogController extends BaseController {
         //System.out.print(df1);
         switch(judul) {
             case "Rekap Penjualan Harian":
-                PrintReport2("report_penjualan_detail", tglawal, tglahir);
+                PrintReport2("report_penjualan_harian", tglawal, tglahir);
                 break;
+            case "Rekap Penjualan Bulanan":
+                PrintReport2("report_penjualan_bulanan", tglawal, tglahir);
+                break;    
             case "Rekap pembelian per faktur":
                 PrintReport2("report_pembelian_perfaktur", tglawal, tglahir);
                 break;
@@ -54,6 +57,9 @@ public class DialogController extends BaseController {
                 break;
             case "Rekap penjualan per faktur":
                 PrintReport2("report_penjualan_perfaktur", tglawal, tglahir);
+                break;
+            case "Rekap pembelian detail":
+                PrintReport2("report_pembelian_detail", tglawal, tglahir);
                 break;
         }    
     }

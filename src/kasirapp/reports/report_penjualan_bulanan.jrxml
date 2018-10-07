@@ -50,57 +50,67 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="99" splitType="Stretch">
+		<band height="149" splitType="Stretch">
 			<image scaleImage="FillFrame" hAlign="Left" vAlign="Middle">
-				<reportElement x="33" y="4" width="80" height="60" uuid="ff52cbc4-9302-447a-86c6-24f0a3e4c4ba"/>
+				<reportElement x="3" y="0" width="84" height="79" uuid="ff52cbc4-9302-447a-86c6-24f0a3e4c4ba"/>
 				<imageExpression><![CDATA[$P{pathlogo}]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="3" y="4" width="552" height="28" uuid="e8cc9dbe-29e3-414f-b36c-93e5333b2bc3"/>
-				<textElement textAlignment="Center">
-					<font size="18" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Yudharta Advertising]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="182" y="32" width="189" height="27" forecolor="#FF6666" uuid="f8bf233e-71c5-4c52-8d2d-f0e72727f3e0"/>
-				<textElement textAlignment="Center">
-					<font size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Detail Penjualan Harian]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="352" y="70" width="50" height="20" uuid="c8451bcd-f12c-4122-9ac0-b6ce3a199921"/>
+				<reportElement x="352" y="129" width="50" height="20" uuid="c8451bcd-f12c-4122-9ac0-b6ce3a199921"/>
 				<text><![CDATA[Periode :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="463" y="70" width="18" height="20" uuid="33e1f098-95ac-4e5d-a94f-ad6bbb151124"/>
+				<reportElement x="463" y="129" width="18" height="20" uuid="33e1f098-95ac-4e5d-a94f-ad6bbb151124"/>
 				<text><![CDATA[s/d]]></text>
 			</staticText>
 			<line>
-				<reportElement x="3" y="90" width="552" height="1" uuid="766ef7ec-9aa7-4391-a999-92c1864fe072"/>
+				<reportElement x="0" y="82" width="552" height="1" uuid="766ef7ec-9aa7-4391-a999-92c1864fe072"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement x="3" y="71" width="50" height="20" uuid="ed010be8-0cd6-4009-bb8e-08c91385727c"/>
+				<reportElement x="3" y="129" width="50" height="20" uuid="ed010be8-0cd6-4009-bb8e-08c91385727c"/>
 				<text><![CDATA[Lembar :]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="53" y="71" width="22" height="20" uuid="92c08332-df90-450e-abd4-d3cbac25ae5e"/>
+				<reportElement x="53" y="129" width="22" height="20" uuid="92c08332-df90-450e-abd4-d3cbac25ae5e"/>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="75" y="71" width="28" height="20" uuid="681566fc-421b-4b8d-b0a2-7b625136a2de"/>
+				<reportElement x="75" y="129" width="28" height="20" uuid="681566fc-421b-4b8d-b0a2-7b625136a2de"/>
 				<textFieldExpression><![CDATA[" / " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="402" y="70" width="61" height="20" uuid="dccd09c7-c5b9-4a33-8efe-b0be7b7423eb"/>
+				<reportElement x="402" y="129" width="61" height="20" uuid="dccd09c7-c5b9-4a33-8efe-b0be7b7423eb"/>
 				<textFieldExpression><![CDATA[$P{tgl_awal}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="481" y="70" width="74" height="20" uuid="b88bd402-3579-4c51-be86-1b7c7ce057d7"/>
+				<reportElement x="481" y="129" width="74" height="20" uuid="b88bd402-3579-4c51-be86-1b7c7ce057d7"/>
 				<textFieldExpression><![CDATA[$P{tgl_akhir}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="95" y="18" width="192" height="28" uuid="0b9c05b9-3664-4437-802c-83c42f24eaed"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Yudharta Advertising]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="46" width="350" height="20" uuid="4d2cd2af-cdca-4517-9cf7-5ccc0bbf2b5b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Yudharta No. 07 Sengonagung, Purwosari, Telp.: 0343-6755 333]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="93" width="555" height="26" forecolor="#FF3333" uuid="618bde65-9a35-4fa9-b8a1-f7b7b6f69f62"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Rekap Penjualan Bulanan]]></text>
+			</staticText>
 		</band>
 	</title>
 	<columnHeader>

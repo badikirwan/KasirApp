@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -32,8 +33,18 @@ public class LaporanController extends BaseController {
     }
     
     @FXML
+    public void btnPenjualanBualananOnAction(ActionEvent event) {
+        OpenModal("Rekap Penjualan Bulanan");
+    }
+    
+    @FXML
     public void btnBarangOnAction(ActionEvent event) {
         PrintReport("report_barang", "", ""); 
+    }
+    
+    @FXML
+    public void btnBarangStokOnAction(ActionEvent event) {
+        PrintReport("report_stok_barang", "", "");
     }
     
     @FXML
@@ -56,6 +67,11 @@ public class LaporanController extends BaseController {
         OpenModal("Rekap penjualan per faktur");
     }
     
+    @FXML
+    public void rekapPembelianDetailOnAction(ActionEvent event) {
+        OpenModal("Rekap pembelian detail");
+    }
+    
     public void OpenModal(String title) {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/kasirapp/view/laporan/Dialog.fxml"));
@@ -70,6 +86,8 @@ public class LaporanController extends BaseController {
             controller.judul = title;
             Stage nStage = new Stage();
             nStage.setScene(scene);
+            nStage.setTitle(title);
+            nStage.getIcons().add(new Image("kasirapp/assets/icon.png"));
             nStage.initModality(Modality.APPLICATION_MODAL);
             nStage.initStyle(StageStyle.TRANSPARENT);
             nStage.show();
