@@ -54,7 +54,7 @@
                            </font>
                         </Label>
                         <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Rekap penjualan per item" />
-                        <Button mnemonicParsing="false" onAction="#rekapPembelianFakturItemOnAction" prefHeight="33.0" prefWidth="190.0" text="Rekap penjualan per faktur" />
+                        <Button mnemonicParsing="false" onAction="#rekapPenjualanFakturItemOnAction" prefHeight="33.0" prefWidth="190.0" text="Rekap penjualan per faktur" />
                         <Button fx:id="btnPenjualanHarian" mnemonicParsing="false" onAction="#btnPenjualanHarianOnAction" prefHeight="33.0" prefWidth="190.0" text="Rekap penjualan harian" />
                         <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0" text="Rekap penjualan bulanan" />
                      </children>

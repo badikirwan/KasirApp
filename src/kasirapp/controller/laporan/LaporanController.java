@@ -11,7 +11,6 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
@@ -19,7 +18,6 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import kasirapp.controller.BaseController;
-import kasirapp.controller.barang.AddBarangController;
 
 /**
  * FXML Controller class
@@ -49,10 +47,14 @@ public class LaporanController extends BaseController {
     }
     
     @FXML
-    public void rekapPembelianFakturOnAction(ActionEvent event) throws IOException {
+    public void rekapPembelianFakturOnAction(ActionEvent event) {
         OpenModal("Rekap pembelian per faktur"); 
     }
     
+    @FXML
+    public void rekapPenjualanFakturItemOnAction(ActionEvent event) {
+        OpenModal("Rekap penjualan per faktur");
+    }
     
     public void OpenModal(String title) {
         FXMLLoader fxmlLoader = new FXMLLoader();

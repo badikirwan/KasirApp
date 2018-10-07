@@ -52,6 +52,9 @@ public class DialogController extends BaseController {
             case "Rekap pembelian per item":
                 PrintReport2("report_pembelian_peritem", tglawal, tglahir);
                 break;
+            case "Rekap penjualan per faktur":
+                PrintReport2("report_penjualan_perfaktur", tglawal, tglahir);
+                break;
         }    
     }
     
